@@ -15,20 +15,21 @@ int main()
     return 0;
 };
 
-float setGrades() {
+float setGrades() 
+{
     float grade1;
     float grade2;
     float grade3;
 
     printf("Digite 3 notas: \n");
 
-    printf("Nota 1: \n");
+    printf("Nota 1: ");
     scanf("%f", &grade1);
     
-    printf("Nota 2: \n");
+    printf("Nota 2: ");
     scanf("%f", &grade2);
     
-    printf("Nota 3: \n");
+    printf("Nota 3: ");
     scanf("%f", &grade3);
 
     
@@ -46,7 +47,7 @@ void checkStatus(float gradeAvarege)
 {
     if (gradeAvarege >= 7)
     {
-        printf("Aprovado");
+        gradeAvarege >= 9 ? printf("Nice!!") : printf("Aprovado");
     } else {
         printf("Reprovado");
     }
